@@ -1,0 +1,8 @@
+name = "noclify"
+main = "src/index.ts"
+compatibility_date = "2022-12-21"
+
+kv_namespaces = [
+  { binding = "Chats", id = "63ac8d254f2d49739d655d6388ccbdcb" },
+  { binding = "Keys", id = "65e054a5b30c43509651386b808b65c9" }
+]
