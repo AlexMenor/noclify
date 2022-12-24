@@ -13,5 +13,6 @@ jobs:
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
         with:
+          preCommands: yarn
           apiToken: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: 'worker'
