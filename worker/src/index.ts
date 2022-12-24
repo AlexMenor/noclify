@@ -58,8 +58,8 @@ router.post("/:key", async ({ req, res, env }) => {
   const durationInSeconds = durationInMs / 1000;
 
   const msg = error
-    ? `🤨 Your command <code>${command}</code> ended with error (${durationInSeconds}s)`
-    : `✅ Your command <code>${command}</code> ended successfully (${durationInSeconds}s)`;
+    ? `🤨 <code>${command}</code> ended with error (${durationInSeconds}s)`
+    : `✅ <code>${command}</code> ended successfully (${durationInSeconds}s)`;
 
   const status = await sendTelegramMessage(chatId, msg, env);
 
