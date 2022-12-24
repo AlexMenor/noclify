@@ -6,6 +6,15 @@
     "noclify": "dist/index.js"
   },
   "license": "MIT",
+  "author": {
+    "email": "alex.menor@icloud.com",
+    "name": "Alex Menor",
+    "url": "https://alexmenor.es"
+  },
+  "repository": "github:alexmenor/noclify",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/node": "^18.11.17",
     "@types/node-fetch": "^2.6.2",
