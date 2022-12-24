@@ -23,7 +23,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "cli": "yarn build && node ."
+    "cli": "yarn build && node .",
+    "ci": "yarn install --immutable --immutable-cache --check-cache"
   },
   "dependencies": {
     "commander": "^9.4.1",
