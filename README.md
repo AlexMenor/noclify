@@ -19,7 +19,7 @@ npm i -g noclify
 noclify sleep 5
 ```
 4. Paste the key and you are all set (it won't ask for the key in subsequent runs)
-5. Check that you have been notified of the task ending succesfully:
+5. Check that you have been notified of the task ending successfully:
 ```
 ✅ sleep 5 ended successfully (5.011s)
 ```
