@@ -13,7 +13,7 @@ Useful if you usually run long tasks and you like to do something else in the me
 npm i -g noclify
 ```
 
-2. Start a conversation with the [Telegram bot](t.me/noclify_bot). It'll return a key like this one: `14237999-334a-4429-4444-e4c323c37440`
+2. Start a conversation with the [Telegram bot](https://t.me/noclify_bot). It'll return a key like this one: `14237999-334a-4429-4444-e4c323c37440`
 3. Run whatever command you want preceded by `noclify` in your shell, for example:
 ```
 noclify sleep 5
