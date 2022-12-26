@@ -38,7 +38,7 @@ router.post("/", async ({ req, res, env }) => {
   }
   const status = await sendTelegramMessage(
     chatId,
-    `Here is your key: <code>${key}</code> <br/> You will be ask to paste it the first time you run <code>noclify</code>`,
+    `Here is your key: <code>${key}</code>. You will be asked to paste it the first time you run <code>noclify</code>`,
     env
   );
   res.status = status;
