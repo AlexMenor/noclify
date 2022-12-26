@@ -1,5 +1,10 @@
 
-Get notified by a Telegram bot when a task executed in your terminal finishes. 
+<p align="center">
+  <img src="noclify.png">
+</p>
+
+__Get notified by a Telegram bot when a task executed in your terminal finishes.__
+
 Useful if you usually run long tasks and you like to do something else in the meantime.
 
 ## How to use
@@ -21,14 +26,14 @@ noclify sleep 5
 ## How it works
 There are three pieces working together here:
 1. Telegram's bot API
-2. A Cloudflare worker (whose code is under the `worker` folder)
-3. The CLI (whose code is under the `cli` folder and published in npm)
+2. Cloudflare worker (whose code is under the `worker` folder)
+3. CLI (whose code is under the `cli` folder and published in NPM)
 
 When you use the bot the first time it generates a key for you that saves together with your chat id in Cloudflare Worker KV.
 
 The CLI executes whatever command you put after `noclify` and when it ends notifies the worker with your key and some metadata. __Note: If the task lasts less than 4 seconds it won't notify anything, because you are probably there anyway.__ 
 
-The worker finds your chat id given that key and sends the message to the Telegram API.
+The worker finds your chat id given the key and sends the message to the Telegram API.
 
 
 
